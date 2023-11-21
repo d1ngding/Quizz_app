@@ -1,4 +1,3 @@
-
 const musique_questions = ["Qui a composé la musique du film Interstellar?", "Hans Zimmer",
 	"Quel groupe a publié la premier album de black metal au monde?", "Venom",
 	"Qui est le 'Big Four' du metal thrash américain?", "Metallica, Megadeth, Slayer, Anthrax",
@@ -173,15 +172,17 @@ function getRandomNumber() {
     let randomNumber = Math.floor(Math.random() * NUM_QUEST);  
     if (!seen.includes(randomNumber)) {
       seen.push(randomNumber);
-      console.log("Found a new question")
+      console.log("Found a new question")   
+      console.log(randomNumber) 
 	  return randomNumber;
     }
     if (seen.length == NUM_QUEST) {
       break;
-    }
+    }	  
     console.log("in LOOP")
   }
   console.log("You won");
+  console.log(######)	
 }
    
 function getRandomQuestion(index) {
