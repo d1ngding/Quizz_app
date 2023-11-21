@@ -173,7 +173,6 @@ function getRandomNumber() {
     if (!seen.includes(randomNumber)) {
       seen.push(randomNumber);
       console.log("Found a new question")   
-      console.log(randomNumber) 
 	  return randomNumber;
     }
     if (seen.length == NUM_QUEST) {
@@ -181,8 +180,7 @@ function getRandomNumber() {
     }	  
     console.log("in LOOP")
   }
-  console.log("You won");
-  console.log(######)	
+  console.log("You won");	
 }
    
 function getRandomQuestion(index) {
